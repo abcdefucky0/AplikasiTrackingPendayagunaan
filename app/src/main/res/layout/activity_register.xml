@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:background="@drawable/bg_form_register"
-        android:backgroundTint="#543434"
+        android:backgroundTint="#26823f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
