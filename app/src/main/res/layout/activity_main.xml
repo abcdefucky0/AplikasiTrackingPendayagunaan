@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
         android:background="@drawable/bg_header"
         android:backgroundTint="#51A969"
         android:orientation="horizontal"
@@ -24,6 +24,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="-10dp"
             android:background="@drawable/ic_circle_black"
             app:srcCompat="@drawable/logokoceng" />
 
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="-10dp"
             android:layout_weight="1"
             android:text="Selamat Datang Kocheng"
             android:textColor="#FFFFFF"
@@ -44,6 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|right"
             android:layout_marginEnd="10dp"
+            android:layout_marginTop="-10dp"
             android:orientation="vertical">
 
             <ImageView
@@ -76,7 +79,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="-20dp"
-        android:background="#EBD7D7"
+        android:background="@drawable/bg_form"
         android:backgroundTint="#E9E2E2"
         android:orientation="horizontal"
         android:paddingTop="10dp"
@@ -85,24 +88,95 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_green" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Zakat"
+                android:textColor="#4F4C4C"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+
+
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_circle_green"
-                />
+                android:background="@drawable/ic_circle_green" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView6"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/img" />
+                app:srcCompat="@drawable/img_1" />
+
         </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_circle_green" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/img_2" />
+
+        </FrameLayout>
+
+
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
