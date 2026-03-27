@@ -130,50 +130,85 @@
 
 
 
-        <FrameLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_green" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_1" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_circle_green" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/img_1" />
-
-        </FrameLayout>
+                android:text="History"
+                android:textColor="#4F4C4C"
+                android:textSize="16sp"
+                android:textStyle="normal" />
 
 
-        <FrameLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_green" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_2" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_circle_green" />
+                android:text="Lainnya"
+                android:textColor="#4F4C4C"
+                android:textSize="16sp"
+                android:textStyle="normal" />
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/img_2" />
 
-        </FrameLayout>
+
+        </LinearLayout>
+
 
 
 
