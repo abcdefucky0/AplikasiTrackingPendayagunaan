@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         )
 
-        val viewPager = findViewById<ViewPager2>()
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        viewPager.adapter = SliderAdapter(images)
 
 
     }
