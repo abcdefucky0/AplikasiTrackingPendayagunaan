@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val images = listOf(
-            R.drawable.dot,
-            R.drawable.dot,
-            R.drawable.dot,
+            R.drawable.bahleeell,
+            R.drawable.bahleeell2,
+            R.drawable.bahleeell3,
 
         )
 
