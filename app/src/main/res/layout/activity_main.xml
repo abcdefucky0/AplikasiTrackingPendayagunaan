@@ -235,10 +235,10 @@
                 android:id="@+id/viewPager"
                 android:layout_width="360dp"
                 android:layout_height="180dp"
-                android:background="#A75858"
                 android:layout_gravity="center"
+                android:background="@drawable/bahleeell2"
 
-               >
+                >
 
             </androidx.viewpager2.widget.ViewPager2>
 
@@ -255,21 +255,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="20dp"
-                        android:text="Campaign Terbaru"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+
                         android:layout_weight="1"
-                        marg
-                        >
+                        android:text="Campaign Terbaru"
+                        android:textSize="16dp"
+                        android:textStyle="bold">
 
                     </TextView>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="12dp"
                         android:layout_weight="1"
                         android:gravity="end"
-                        android:text="Selanjutnya">
+                        android:text="Selanjutnya"
+                        android:textColor="#00AEFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
                     </TextView>
 
