@@ -237,9 +237,52 @@
                 android:layout_height="180dp"
                 android:background="#A75858"
                 android:layout_gravity="center"
+
                >
 
             </androidx.viewpager2.widget.ViewPager2>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/bg_menu"
+                android:backgroundTint="#26823F"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:text="Campaign Terbaru"
+                        android:layout_weight="1"
+                        marg
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Selanjutnya">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
 
@@ -247,15 +290,6 @@
     </androidx.core.widget.NestedScrollView>
 
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/bg_menu"
-        android:backgroundTint="#26823F"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"></LinearLayout>
 
 
 
