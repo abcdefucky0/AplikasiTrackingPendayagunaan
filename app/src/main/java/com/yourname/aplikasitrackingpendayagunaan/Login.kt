@@ -20,15 +20,23 @@ class Login : AppCompatActivity() { //  class login itu nama activity , AppCompa
         //pasang tampilan xml ke halaman ini
 
         val btnLogin = findViewById<Button>(R.id.btn_register)
+        //val deklarasi variable yg nilainya tetap
         btnLogin.setOnClickListener {
+        //dengerin kalau tombol diclick
+        // {} kode didalam dijalankan saat tombol di click
             goToMainActivity()
+            //memanggil funksi pindah halaman
         }
     }
 
     private  fun goToMainActivity () {
+    //fungsi private yg cuma bisa diakses di file Login.kt
         val intent = Intent(this, MainActivity::class.java)
+        // memanggil inten(objek untuk berpindah halaman) , berpindah dari halaman ini ke halaman Main
         startActivity(intent)
+        //eksekusi pindah halaman
         finish()
+        //tutup halaman login agar tidak bisa di-back
     }
 
 }
