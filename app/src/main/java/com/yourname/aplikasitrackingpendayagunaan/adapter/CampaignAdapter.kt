@@ -16,15 +16,19 @@
     //deklarasi class dgn nama campaignAdapter , dan mewarisi kemampuan dari RecyclerView.Adapter
     // private val list : ini merupakan sebuah private constructor , data disimpan , tidak bisa diubah di luar class  ,
     //setiap kali buat objek CampaignAdapter  maka isinya wajib  satu argumen berupa list
-    // List<CampaignModel> isi datanya berupa object campaign model
+    // List<CampaignModel> isi datanya berupa object campaign model , list yg isinya hanya boleh object campaign model
     // RecyclerView.Adapter inheritance dari campaign adapter
-
+    // CampaignAdapter mewaarisi semua kemampuan dari RecyclerView.Adapter , dan konsekuensinya dia wajib implement 3 method
+    // onCreateViewHolder , onBindViewHolder , getItemCount , kalau tidak compiler error
+     // <CampaignAdapter.ViewHolder> itu generic parameter yg memberitahu adapater "ViewHolder yg km pakai adalah class ViewHolder yg ada didalam CampaignAdapter"
         class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val image: ImageView = itemView.findViewById(R.id.imageView8)
             val title: TextView = itemView.findViewById(R.id.textView8)
             val organizer: TextView = itemView.findViewById(R.id.textView9)
             val collected: TextView = itemView.findViewById(R.id.textView11)
         }
+        // class ViewHolder : Nested class  klas didalam klas , dia hidup didalam campaign adapter
+        //constructor menerima 1 param bertipe View
         // view holder : menyimpan referensi view yg banyak itu sekali saja
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -34,7 +38,8 @@
         }
         //dipanggil saat pertama kali load atau scroll area baru
         //alur   dari xml campaign_item.xml > LayoutInflater.inflate() > View > ViewHolder
-        //LayoutInflater.from(parent.context) : mengambil context dari parent
+        //LayoutInflater.from(parent.context) : mengambil context dari context ,
+        // context : objeck yg berisi info tntng  environment aplikasi spt tema , resource dll
         //.inflate (R.layout.campaign_item, parent, false)  : tiupkan/ubahkan xml jadi view nyata
         // false : jangan langsung attach ke parent (RecyclerView yg urus ini)
         // return ViewHolder(view) bungkus view tadi dalam ViewHolder
