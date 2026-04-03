@@ -10,6 +10,7 @@ data class CampaignModel(
     val end: String?,
     val target: Int?,
     val status: String?,
+    val imageRes: Int = 0,
     val image: String?,
     val category_id: Int?,
     val user_id: Int?,

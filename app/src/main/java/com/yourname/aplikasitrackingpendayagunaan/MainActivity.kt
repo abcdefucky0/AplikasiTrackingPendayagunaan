@@ -5,7 +5,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.yourname.aplikasitrackingpendayagunaan.adapter.CampaignAdapter
+import com.yourname.aplikasitrackingpendayagunaan.model.CampaignModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,16 +22,43 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // ViewPager slider
         val images = listOf(
             R.drawable.bahleeell,
             R.drawable.bahleeell2,
             R.drawable.bahleeell3,
-
         )
-
         val viewPager = findViewById<ViewPager2>(R.id.viewPager)
         viewPager.adapter = SliderAdapter(images)
 
+        // RecyclerView Campaign
+        val dummyData = listOf(
+            CampaignModel(
+                id = 1,
+                slug = "free-palestine",
+                title = "Free Palestine",
+                description = "UPZ Bakti Bersama Banjarmasin",
+                donasiterkumpul = 20000000,
+                imageRes = R.drawable.bahleeell, // ← ganti drawable sesuai milik kamu
+                start = null, end = null, target = null, status = null,
+                image = null, category_id = null, user_id = null,
+                create_at = null, update_at = null, agency_id = null, delete_at = null
+            ),
+            CampaignModel(
+                id = 2,
+                slug = "bantu-banjir",
+                title = "Bantu Korban Banjir",
+                description = "Yayasan Peduli Kalsel",
+                donasiterkumpul = 5000000,
+                imageRes = R.drawable.bahleeell3, // ← ganti drawable sesuai milik kamu
+                start = null, end = null, target = null, status = null,
+                image = null, category_id = null, user_id = null,
+                create_at = null, update_at = null, agency_id = null, delete_at = null
+            )
+        )
 
+        val rvCampaign = findViewById<RecyclerView>(R.id.rvCampaign)
+        rvCampaign.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvCampaign.adapter = CampaignAdapter(dummyData)
     }
 }
