@@ -60,4 +60,6 @@
 
 
         override fun getItemCount() = list.size
+        //memberitahu RecyclerView  bahwa "ada berapa item yg ditampilkan ?"
+        // = list.size  : one liner , sama dengan {return list.size}
     }
