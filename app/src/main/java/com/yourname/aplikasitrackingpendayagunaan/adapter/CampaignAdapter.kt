@@ -6,14 +6,16 @@
     import android.view.ViewGroup // yg bisa menampung semua parent ui lain
     import android.widget.ImageView
     import android.widget.TextView
-    import androidx.recyclerview.widget.RecyclerView  //komponen list/daftar
+    import androidx.recyclerview.widget.RecyclerView  //komponen list/daftar , yg dirender ketika item terlihat di layar
     import com.yourname.aplikasitrackingpendayagunaan.R //menjadi penghubung ke semua resource (layout, id  , drawable)
     import com.yourname.aplikasitrackingpendayagunaan.model.CampaignModel //mengimport blueprint dari file ini
 
     class CampaignAdapter(private val list: List<CampaignModel>) :
         RecyclerView.Adapter<CampaignAdapter.ViewHolder>() {
+     // class : mendefinisikan sebuah  blueprint objek baru bernama Campaign Adapter
     //deklarasi class dgn nama campaignAdapter , dan mewarisi kemampuan dari RecyclerView.Adapter
-    // private val list : data disimpan , tidak bisa diubah di luar class
+    // private val list : ini merupakan sebuah private constructor , data disimpan , tidak bisa diubah di luar class  ,
+    //setiap kali buat objek CampaignAdapter  maka isinya wajib  satu argumen berupa list
     // List<CampaignModel> isi datanya berupa object campaign model
     // RecyclerView.Adapter inheritance dari campaign adapter
 
