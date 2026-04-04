@@ -294,6 +294,52 @@
                     tools:listitem="@layout/campaign_item"/>
 
 
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:text="Doa Untuk Saudara kita"/>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sebelumnya"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_marginRight="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_height="wrap_content"
+                            android:text="Selanjutnya"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+                        
+                    </LinearLayout>
+                    
+                    
+                </LinearLayout>
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
             </LinearLayout>
 
 
