@@ -2,10 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="280dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
     android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
     android:layout_marginRight="8dp"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="12dp"
@@ -35,8 +35,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Free Palestine"
-                android:textStyle="bold"
-                android:textSize="16dp"/>
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -61,11 +61,11 @@
                     android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-android:layout_weight="1"
+                    android:layout_weight="1"
+                    android:text="Terkumpul Rp 20.000.000"
                     android:textColor="#10B981"
                     android:textSize="14sp"
-android:textStyle="bold"
-                    android:text="Terkumpul Rp 20.000.000" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
