@@ -1,75 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#F5F5F5">
 
-    <LinearLayout
+    <!-- Konten scroll, layout_weight=1 supaya ambil sisa ruang -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grub_sub"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="40dp"
+                    android:paddingBottom="52dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPZPRENEUR"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A1A1A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ananda Aulia Hanifah"
+                        android:textSize="14sp"
+                        android:textColor="#444444"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cimol Gerobak"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Handil Bakti"
+                        android:textSize="14sp"
+                        android:textColor="#444444"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#5BA8B5"
+                        app:cornerRadius="10dp"
+                        android:text="See Detail"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation selalu nempel di bawah -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        app:menu="@menu/bottom_nav_menu"/>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/grub_sub"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="30dp"
-                android:paddingLeft="40dp"
-                android:paddingBottom="52dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="UPZPRENEUR"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:textColor="#1A1A1A"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ananda Aulia Hanifah"
-                    android:textSize="14sp"
-                    android:textColor="#444444"
-                    android:layout_marginTop="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cimol Gerobak"
-                    android:textSize="14sp"
-                    android:textColor="#444444"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Handil Bakti"
-                    android:textSize="14sp"
-                    android:textColor="#444444"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
-                    android:layout_marginRight="40dp"
-                    android:backgroundTint="#5BA8B5"
-                    android:text="See Detail" />
-
-            </LinearLayout>
-
-        </FrameLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

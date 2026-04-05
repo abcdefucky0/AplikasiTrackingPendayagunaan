@@ -1,5 +1,6 @@
 package com.yourname.aplikasitrackingpendayagunaan
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.yourname.aplikasitrackingpendayagunaan.adapter.CampaignAdapter
 import com.yourname.aplikasitrackingpendayagunaan.model.CampaignModel
 
@@ -16,11 +18,38 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+        // Set posisi aktif di Home
+        bottomNav.selectedItemId = R.id.nav_home
+
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    // Sudah di home, tidak perlu pindah
+                    true
+                }
+                R.id.nav_tracking -> {
+                    startActivity(Intent(this, MenuTracking::class.java))
+                    finish() // tutup MainActivity supaya back stack bersih
+                    true
+                }
+                else -> false
+            }
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
+
+
+
+
+
+
+
 
         // ViewPager slider
         val images = listOf(
