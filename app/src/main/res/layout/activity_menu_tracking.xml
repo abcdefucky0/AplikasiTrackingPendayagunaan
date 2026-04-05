@@ -1,10 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuTracking">
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginBottom="280dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPZPRENEUR"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ananda Aulia Hanifah"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cimol Gerobak"
+                android:textSize="14sp"
+                android:textColor="#444444"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handil Bakti"
+                android:textSize="14sp"
+                android:textColor="#444444"/>
+
+            <!-- Tombol di dalam card, tapi digeser ke bawah pakai translationY -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See Detail"
+                android:backgroundTint="#5BA8B5"
+                android:elevation="8dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:translationY="28dp"/>
+
+        </LinearLayout>
+
+        <!-- Space pengganti supaya card berikutnya tidak nempel ke tombol -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
