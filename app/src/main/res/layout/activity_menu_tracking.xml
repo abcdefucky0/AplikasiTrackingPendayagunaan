@@ -53,10 +53,9 @@
 
             <!-- Card 1 -->
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="140dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
-                android:layout_marginEnd="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="3dp">
 
@@ -77,6 +76,7 @@
                         android:layout_marginStart="8dp"
                         android:maxLines="3"
                         android:text="Penerima Program Aktif"
+                        android:textStyle="bold"
                         android:textSize="11.9sp" />
                     <TextView
                         android:layout_weight="1"
@@ -84,18 +84,21 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
-                        android:text="1"
-                        android:textSize="27sp" />
+                        android:text="67"
+                        android:textSize="24sp" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+            
+            <View
+                android:layout_width="50dp"
+                android:layout_height="10dp"></View>
 
             <!-- Card 2 -->
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
+                android:layout_width="140dp"
                 android:layout_height="45dp"
-                android:layout_weight="1"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="3dp">
 
@@ -110,12 +113,25 @@
                         android:background="#8EA4D2" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:layout_marginStart="8dp"
+                        android:maxLines="3"
                         android:text="Program Selesai"
-                        android:textSize="12sp" />
+                        android:textSize="11.9sp" />
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="15"
+                        android:textSize="24sp" />
+
 
                 </LinearLayout>
 
@@ -132,6 +148,7 @@
         android:layout_weight="1">
 
         <LinearLayout
+            android:id="@+id/containerCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -153,7 +170,7 @@
                     android:orientation="vertical"
                     android:paddingTop="30dp"
                     android:paddingLeft="40dp"
-                    android:paddingBottom="52dp">
+                    android:paddingBottom="2dp">
 
                     <TextView
                         android:layout_width="wrap_content"
