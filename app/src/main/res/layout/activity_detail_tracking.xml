@@ -15,7 +15,6 @@
         android:backgroundTint="#97D2A5"
         android:orientation="vertical">
 
-        <!-- Row title + logo -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,9 +46,11 @@
         <!-- Card 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="310dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             app:cardElevation="3dp">
 
             <LinearLayout
@@ -62,26 +63,60 @@
                     android:layout_height="match_parent"
                     android:background="#8EA4D2" />
 
-                <TextView
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginStart="8dp"
-                    android:text="Total Dana"
-                    android:textSize="14sp" />
-
-
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="30dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:text="Rp 45,000,000"
-                    android:textSize="24sp" />
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
 
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:text="UPZPRENEUR"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:text="Ananda Aulia Hanifah "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:text="Tahu Goreng Teteh"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:text="Handil Bakti"
+                        android:textSize="14sp" />
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
 
 
 
