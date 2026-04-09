@@ -9,6 +9,11 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+    
+    
+    <style name="RoundedImage">
+        <item name="cornerRadius">120dp</item>
+    </style>
 
     <style name="Theme.AplikasiTrackingPendayagunaan" parent="Base.Theme.AplikasiTrackingPendayagunaan" />
 </resources>
