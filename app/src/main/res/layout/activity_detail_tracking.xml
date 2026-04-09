@@ -164,24 +164,44 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
 
             <ImageView
+                android:layout_marginTop="20dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/logokoceng"
-                android:layout_gravity="bottom|left"
                 >
 
             </ImageView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="hello world">
 
-            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usaha"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
