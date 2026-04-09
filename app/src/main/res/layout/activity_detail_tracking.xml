@@ -171,7 +171,7 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:src="@drawable/img"
@@ -187,13 +187,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="46dp"
             >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ananda Aulia Hanifah"/>
+                    android:text="Ananda Aulia Hanifah"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
