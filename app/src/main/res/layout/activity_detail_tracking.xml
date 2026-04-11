@@ -395,7 +395,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 Juni"
+                        android:text="10 Oktober"
                         android:textSize="12sp"/>
 
                 </LinearLayout>
@@ -441,13 +441,14 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
+                        android:text="
+Penyerahan Barang"
                         android:textSize="14sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 Juni"
+                        android:text="14 Desember"
                         android:textSize="12sp"/>
 
                 </LinearLayout>
@@ -491,13 +492,13 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
+                        android:text="Monitoring Bulanan"
                         android:textSize="14sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 Juni"
+                        android:text="01 Jan"
                         android:textSize="12sp"/>
 
                 </LinearLayout>
