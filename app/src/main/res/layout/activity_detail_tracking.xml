@@ -218,7 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:text="Usaha"/>
+                        android:text="Tahu Goreng Teteh"/>
 
                 </LinearLayout>
 
@@ -243,7 +243,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:text="Dana"/>
+                        android:text="Rp 50.000.000"/>
 
 
                 </LinearLayout>
@@ -269,7 +269,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:text="Lokasi"/>
+                        android:text="Universitas Pakuan Bogor"/>
 
 
                 </LinearLayout>
@@ -419,7 +419,7 @@
                     <View
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
+                        android:background="@drawable/dot_inactive"/>
 
                     <!-- Garis penghubung -->
                     <View
@@ -470,7 +470,7 @@ Penyerahan Barang"
                     <View
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
+                        android:background="@drawable/dot_inactive"/>
 
                     <!-- Garis penghubung -->
                     <View
@@ -520,7 +520,7 @@ Penyerahan Barang"
                     <View
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
+                        android:background="@drawable/dot_inactive"/>
 
                     <!-- Garis penghubung -->
                     <View
@@ -542,7 +542,107 @@ Penyerahan Barang"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
+                        android:text="Evaluasi Progress"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19 Februari"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+            </LinearLayout> <!--track 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--Kolom kiri point to point -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp">
+
+                    <!-- Dot -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/dot_inactive"/>
+
+                    <!-- Garis penghubung -->
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="20dp"
+                        android:background="#CCCCCC"/>
+
+                </LinearLayout>
+                <!-- Kolom kanan: teks + tanggal -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_marginTop="-3dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tindak Lanjut"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 Maret"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+            </LinearLayout> <!--track 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--Kolom kiri point to point -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp">
+
+                    <!-- Dot -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/dot_inactive"/>
+
+                    <!-- Garis penghubung -->
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="20dp"
+                        android:background="#CCCCCC"/>
+
+                </LinearLayout>
+                <!-- Kolom kanan: teks + tanggal -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_marginTop="-3dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Laporan Periode"
                         android:textSize="14sp"/>
 
                     <TextView
@@ -570,107 +670,7 @@ Penyerahan Barang"
                     <View
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
-
-                    <!-- Garis penghubung -->
-                    <View
-                        android:layout_width="2dp"
-                        android:layout_height="20dp"
-                        android:background="#CCCCCC"/>
-
-                </LinearLayout>
-                <!-- Kolom kanan: teks + tanggal -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="5dp">
-
-                    <TextView
-                        android:layout_marginTop="-3dp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
-                        android:textSize="14sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Juni"
-                        android:textSize="12sp"/>
-
-                </LinearLayout>
-            </LinearLayout> <!--track 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <!--Kolom kiri point to point -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginLeft="12dp">
-
-                    <!-- Dot -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
-
-                    <!-- Garis penghubung -->
-                    <View
-                        android:layout_width="2dp"
-                        android:layout_height="20dp"
-                        android:background="#CCCCCC"/>
-
-                </LinearLayout>
-                <!-- Kolom kanan: teks + tanggal -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="5dp">
-
-                    <TextView
-                        android:layout_marginTop="-3dp"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
-                        android:textSize="14sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Juni"
-                        android:textSize="12sp"/>
-
-                </LinearLayout>
-            </LinearLayout> <!--track 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <!--Kolom kiri point to point -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginLeft="12dp">
-
-                    <!-- Dot -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:background="@drawable/dot_active"/>
+                        android:background="@drawable/dot_inactive"/>
 
 
                 </LinearLayout>
@@ -687,13 +687,13 @@ Penyerahan Barang"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Penerima Ditentukan"
+                        android:text="Laporan Final"
                         android:textSize="14sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 Juni"
+                        android:text="20 Agustus"
                         android:textSize="12sp"/>
 
                 </LinearLayout>
