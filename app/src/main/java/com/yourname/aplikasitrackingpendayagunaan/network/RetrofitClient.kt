@@ -26,7 +26,7 @@ object RetrofitClient {
     // IP ini harus bisa diakses dari emulator/HP
     // Contoh: "http://10.96.174.182/bakti_bersama/"
     // ============================================================
-    const val BASE_URL = "http://10.96.174.182/bakti_bersama/"
+    const val BASE_URL = "https://siazistracking.free.nf/bakti_bersama/"
 
     // ============================================================
     // LOGGING INTERCEPTOR
