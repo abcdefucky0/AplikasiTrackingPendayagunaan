@@ -8,6 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
 
     const val BASE_URL = "https://brilliant-avenge-unbroken.ngrok-free.dev/bakti_bersama/"
+    //syukurnya masih bisa url nya stelah 1 hari
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
     }
