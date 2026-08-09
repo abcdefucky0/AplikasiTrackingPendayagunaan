@@ -315,14 +315,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="240dp"
+android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
-                android:layout_width="370dp"
-                android:layout_height="180dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_height="240dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bg_slider_rounded"
                 android:outlineProvider="background"
@@ -401,6 +403,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Doa Untuk Saudara kita"
+                        android:layout_marginLeft="6dp"
                         android:textColor="#000"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -415,6 +418,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:layout_marginLeft="6dp"
                             android:text="Sebelumnya"
                             android:textSize="12dp"
                             android:textColor="#2E7D32"
@@ -424,9 +428,10 @@
                             android:id="@+id/ucapanSesudah"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginRight="20dp"
                             android:layout_weight="1"
                             android:gravity="right"
+
                             android:text="Selanjutnya"
                             android:textSize="12dp"
                             android:textColor="#2E7D32"
@@ -517,6 +522,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kata Mereka Tentang Bakti Bersama"
+                        android:layout_marginLeft="20dp"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
@@ -530,6 +536,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
                             android:text="Sebelumnya"
                             android:textSize="12dp"
                             android:textColor="#2E7D32"
@@ -539,7 +546,7 @@
                             android:id="@+id/reviewSesudah"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginRight="20dp"
                             android:layout_weight="1"
                             android:gravity="right"
                             android:text="Selanjutnya"
